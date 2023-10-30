@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/CLionProjects/board_for_auctus/cmake-build-debug/
+cmake_ninja_workdir = D$:/STM_Project/board_for_auctus/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target board_for_auctus.elf
 
@@ -49,187 +49,195 @@ cmake_ninja_workdir = C$:/CLionProjects/board_for_auctus/cmake-build-debug/
 
 build cmake_object_order_depends_target_board_for_auctus.elf: phony || CMakeFiles/board_for_auctus.elf.dir
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/gpio.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/auctus.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/auctus.c || cmake_object_order_depends_target_board_for_auctus.elf
+  DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\auctus.c.obj.d
+  FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
+
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/gpio.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\gpio.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/main.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/main.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/main.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/main.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\main.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/stm32f1xx_hal_msp.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/stm32f1xx_hal_msp.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_it.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/stm32f1xx_it.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_it.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/stm32f1xx_it.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\stm32f1xx_it.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/syscalls.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/syscalls.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\syscalls.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/sysmem.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/sysmem.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\sysmem.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/system_stm32f1xx.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/system_stm32f1xx.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/system_stm32f1xx.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/system_stm32f1xx.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\system_stm32f1xx.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Src/usart.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Src/usart.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Src/usart.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Src/usart.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Src\usart.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: ASM_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Core/Startup/startup_stm32f103c8tx.s || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: ASM_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Core/Startup/startup_stm32f103c8tx.s || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Core\Startup\startup_stm32f103c8tx.s.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Core\Startup
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
-build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug C$:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c || cmake_object_order_depends_target_board_for_auctus.elf
+build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C_COMPILER__board_for_auctus.2eelf_Debug D$:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c || cmake_object_order_depends_target_board_for_auctus.elf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -IC:/CLionProjects/board_for_auctus/Core/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -IC:/CLionProjects/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -IC:/CLionProjects/board_for_auctus/Drivers/CMSIS/Include
+  INCLUDES = -ID:/STM_Project/board_for_auctus/Core/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/STM_Project/board_for_auctus/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/STM_Project/board_for_auctus/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\board_for_auctus.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
 
@@ -241,11 +249,11 @@ build CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32
 #############################################
 # Link the executable board_for_auctus.elf
 
-build board_for_auctus.elf: C_EXECUTABLE_LINKER__board_for_auctus.2eelf_Debug CMakeFiles/board_for_auctus.elf.dir/Core/Src/gpio.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/main.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/system_stm32f1xx.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/usart.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+build board_for_auctus.elf: C_EXECUTABLE_LINKER__board_for_auctus.2eelf_Debug CMakeFiles/board_for_auctus.elf.dir/Core/Src/auctus.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/gpio.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/main.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/stm32f1xx_it.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/system_stm32f1xx.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Src/usart.c.obj CMakeFiles/board_for_auctus.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj CMakeFiles/board_for_auctus.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
   FLAGS = -g
-  LINK_FLAGS = -Wl,-gc-sections,--print-memory-usage,-Map=C:/CLionProjects/board_for_auctus/cmake-build-debug/board_for_auctus.map -mcpu=cortex-m3 -mthumb -mthumb-interwork -T C:/CLionProjects/board_for_auctus/STM32F103C8TX_FLASH.ld
+  LINK_FLAGS = -Wl,-gc-sections,--print-memory-usage,-Map=D:/STM_Project/board_for_auctus/cmake-build-debug/board_for_auctus.map -mcpu=cortex-m3 -mthumb -mthumb-interwork -T D:/STM_Project/board_for_auctus/STM32F103C8TX_FLASH.ld Core/Inc/auctus.h Core/Src/auctus.c
   OBJECT_DIR = CMakeFiles\board_for_auctus.elf.dir
-  POST_BUILD = cmd.exe /C "cd /D C:\CLionProjects\board_for_auctus\cmake-build-debug && arm-none-eabi-objcopy -Oihex C:/CLionProjects/board_for_auctus/cmake-build-debug/board_for_auctus.elf C:/CLionProjects/board_for_auctus/cmake-build-debug/board_for_auctus.hex && arm-none-eabi-objcopy -Obinary C:/CLionProjects/board_for_auctus/cmake-build-debug/board_for_auctus.elf C:/CLionProjects/board_for_auctus/cmake-build-debug/board_for_auctus.bin"
+  POST_BUILD = cmd.exe /C "cd /D D:\STM_Project\board_for_auctus\cmake-build-debug && arm-none-eabi-objcopy -Oihex D:/STM_Project/board_for_auctus/cmake-build-debug/board_for_auctus.elf D:/STM_Project/board_for_auctus/cmake-build-debug/board_for_auctus.hex && arm-none-eabi-objcopy -Obinary D:/STM_Project/board_for_auctus/cmake-build-debug/board_for_auctus.elf D:/STM_Project/board_for_auctus/cmake-build-debug/board_for_auctus.bin"
   PRE_LINK = cd .
   TARGET_FILE = board_for_auctus.elf
   TARGET_PDB = board_for_auctus.elf.dbg
@@ -255,7 +263,7 @@ build board_for_auctus.elf: C_EXECUTABLE_LINKER__board_for_auctus.2eelf_Debug CM
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\CLionProjects\board_for_auctus\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\STM_Project\board_for_auctus\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -266,7 +274,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\CLionProjects\board_for_auctus\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\CLionProjects\board_for_auctus -BC:\CLionProjects\board_for_auctus\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\STM_Project\board_for_auctus\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\STM_Project\board_for_auctus -BD:\STM_Project\board_for_auctus\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -282,7 +290,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: C:/CLionProjects/board_for_auctus/cmake-build-debug
+# Folder: D:/STM_Project/board_for_auctus/cmake-build-debug
 
 build all: phony board_for_auctus.elf
 

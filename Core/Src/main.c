@@ -20,6 +20,7 @@
 #include "main.h"
 #include "usart.h"
 #include "gpio.h"
+#include "auctus.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -49,12 +50,12 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+void Simple_auctus_setup(int volume, int addr);
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 /**
@@ -82,12 +83,14 @@ int main(void)
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
+    simple_setup_auctus()
+
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART1_UART_Init();
+  MX_USART1_UART_Init(); // Bluetooth
   MX_USART2_UART_Init();
-  MX_USART3_UART_Init();
+  MX_USART3_UART_Init(); // AT port Auctus
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

@@ -1,5 +1,5 @@
-"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S C:\CLionProjects\board_for_auctus -B C:\CLionProjects\board_for_auctus\cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe" -G Ninja -S D:\STM_Project\board_for_auctus -B D:\STM_Project\board_for_auctus\cmake-build-debug
 -- Minimal optimization, debug info included
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/CLionProjects/board_for_auctus/cmake-build-debug
+-- Build files have been written to: D:/STM_Project/board_for_auctus/cmake-build-debug
