@@ -20,10 +20,10 @@
 #include "main.h"
 #include "usart.h"
 #include "gpio.h"
-#include "auctus.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "auctus.h"
 
 /* USER CODE END Includes */
 
@@ -83,27 +83,48 @@ int main(void)
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
-    simple_setup_auctus()
-
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_USART1_UART_Init(); // Bluetooth
+  MX_USART1_UART_Init();
   MX_USART2_UART_Init();
-  MX_USART3_UART_Init(); // AT port Auctus
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+    uint8_t state = 0;
+
+    /*
+     * Логика такая - сначала сбрасываем модуль импульсом 1сек потом ждем 1 сек что бы он запустился
+     * но по хорошему надо не ждать время а ждать ответ по юарт +DMOGETSTARTUP:1 - означает что модуль включился
+     * после этого уже начинать общение и после каждой команды ждать обратную связь от модуля и парсить ответы
+     * также ногой PA12 надо управлять MUTE состоянием и при передачи данных что бы не создавать наводки
+     */
+
+    HAL_GPIO_WritePin(CS_Auctus_GPIO_Port, CS_Auctus_Pin, 1);
+    HAL_Delay(1000);
+    HAL_GPIO_WritePin(Led_GPIO_Port, Led_Pin, 0);
+    HAL_Delay(1000);
+
+    state = simple_setup_auctus(&huart3, 18, 16700000, 1, 423125000, 423125000);
+    HAL_GPIO_WritePin(CS_Auctus_GPIO_Port, CS_Auctus_Pin, 0);
+
+
+
+
+    while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
-      HAL_Delay(1000);
+    if(state == 0){
+        HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
+        HAL_Delay(1000);
+    }
+
   }
   /* USER CODE END 3 */
 }
@@ -161,6 +182,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
+
   }
   /* USER CODE END Error_Handler_Debug */
 }

@@ -63,6 +63,8 @@ void Error_Handler(void);
 #define AT_TX_GPIO_Port GPIOB
 #define AT_RX_Pin GPIO_PIN_11
 #define AT_RX_GPIO_Port GPIOB
+#define CS_Auctus_Pin GPIO_PIN_15
+#define CS_Auctus_GPIO_Port GPIOB
 #define Blue_TX_Pin GPIO_PIN_9
 #define Blue_TX_GPIO_Port GPIOA
 #define Blue_RX_Pin GPIO_PIN_10

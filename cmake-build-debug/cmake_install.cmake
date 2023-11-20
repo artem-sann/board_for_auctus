@@ -1,4 +1,4 @@
-# Install script for directory: D:/STM_Project/board_for_auctus
+# Install script for directory: C:/STM_Project/board_for_auctus
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/STM_Project/board_for_auctus/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/STM_Project/board_for_auctus/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

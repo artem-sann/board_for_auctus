@@ -1,3 +1,3 @@
-D:/STM_Project/board_for_auctus/cmake-build-debug/CMakeFiles/board_for_auctus.elf.dir
-D:/STM_Project/board_for_auctus/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/STM_Project/board_for_auctus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/STM_Project/board_for_auctus/cmake-build-debug/CMakeFiles/board_for_auctus.elf.dir
+C:/STM_Project/board_for_auctus/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/STM_Project/board_for_auctus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
