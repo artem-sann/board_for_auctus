@@ -15,6 +15,7 @@ uint8_t STR_CURRCH[] = "AT+DMOGETCURRCH";
 uint8_t STR_VOLUME[] = "AT+DMOSETVOLUME=";
 uint8_t STR_MIC[] = "AT+DMOSETMIC=";
 uint8_t STR_GRPADDR[] = "AT+DMOSETGRPADDR=";
+uint8_t STR_SEND[] = "AT+ SENDMSG=";
 
 /**
  * @Note Функция базовой настройки модуля
@@ -134,4 +135,32 @@ uint8_t simple_setup_auctus(UART_HandleTypeDef *huart, uint8_t  volume, uint32_t
 
 
     return 0;
+}
+
+/**
+ * @Note Функция функция отправки сообщений до 180 байт
+ * @param huart - Последовательный порт к которому подключен модуль
+ * @param type - Тип вызова: 0 - индивидуально, 1 - групповой
+ * @param  addr - id адресата , диапазон: 0 - 16777215
+ * @param size - размер сообщения для отправки не более 180 байт исключая терминатор '/0'
+ * @return 0 - успешное выполнение, 1 - ошибка
+ */
+uint8_t send_sms(UART_HandleTypeDef *huart, uint8_t type,  uint32_t addr, uint8_t size, uint8_t  *message) {
+    uint8_t STR_1[200];
+    char rtr = 0x0D;
+    snprintf(STR_1, sizeof(STR_1), "%s%d,%lu,%d,%s%c", STR_SEND, type, addr, size, message, rtr);
+
+    HAL_UART_Transmit(huart,STR_1, strlen(STR_1), 800);
+
+    return 0;
+}
+
+
+/**
+ * @Note Функция настройки цифрового режима
+ * @param huart - Последовательный порт к которому подключен модуль
+ * @return 0 - успешное выполнение, 1 - ошибка
+ */
+uint8_t digital_setup(UART_HandleTypeDef *huart) {
+
 }
